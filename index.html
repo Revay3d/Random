@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div class="padre">
+    <p class="padre__vidas"><i class="fa-solid fa-heart "></i><span id="vidas"> 3</span></p>
+ 
+<h2 class="padre__titulo">¡Adivina el número!</h2>
+<p class="padre__mensaje">Introduce un número del 1 al 10</p>
+<div class="caja__boton"><input class="padre__casilla" type="number" id="adivinanza" min="1" max="10" >
+    <i onclick="juego()" class=" padre__botom fa-solid fa-caret-right"></i> </div>
+    
+
+
+<p class="padre__respuesta" id="resultado"></p>
+
+<footer class="padre__mar">De: Roberto jimenez</footer>
+</div>
+<!-- La ventana emergente -->
+<div id="popup">
+    <div>
+      <h2 class="padre__titulo">Felicidades, ¡Ganaste!</h2>
+      <button class="botom" onclick="cerrarPopup()">Cerrar</button>
+    </div>
+  </div>
+
+  <div id="popup-2">
+    <div>
+      <h2 class="padre__titulo">Game over</h2>
+      <button class="botom" onclick="cerrarPopup_2()">Volver</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/495b6926d2.js" crossorigin="anonymous"></script>
+</body>
+</html>
